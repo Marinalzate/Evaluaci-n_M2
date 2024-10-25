@@ -1,0 +1,39 @@
+/* Define la fuente principal y elimina el margen del body */
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+/* Contenedor general para organizar tarjetas con flexbox */
+.contenedor {
+    display: flex; /* Hace que las tarjetas se organicen en una fila o columna */
+    flex-wrap: wrap; /* Permite que las tarjetas ocupen la siguiente fila si no hay espacio */
+    justify-content: space-around; /* Distribuye el espacio entre las tarjetas */
+    padding: 20px; /* Añade espacio alrededor del contenedor */
+}
+/* Estilos para las tarjetas individuales */
+.tarjeta {
+    width: 300px; /* Ancho de cada tarjeta */
+    margin: 10px; /* Espacio alrededor de cada tarjeta */
+    border: 1px solid #ccc; /* Borde de color gris claro */
+    padding: 20px; /* Espacio interior de la tarjeta */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para dar un efecto elevado */
+}
+/* Ajuste de las imágenes dentro de las tarjetas */
+.tarjeta img {
+    width: 100%; /* La imagen ocupa todo el ancho de la tarjeta */
+    height: auto; /* Ajusta la altura para mantener la proporción */
+    display: block; /* Elimina el espacio alrededor de la imagen */
+    border-radius: 5px 5px 0 0; /* Bordes redondeados en la parte superior */
+}
+/* Estilos para el título de la tarjeta */
+.tarjeta h3 {
+    margin-top: 10px; /* Espacio entre la imagen y el título */
+}
+
+/* Estilos para el párrafo de la tarjeta */
+.tarjeta p {
+    font-size: 0.9em; /* Tamaño de fuente ligeramente reducido */
+    line-height: 1.5; /* Espaciado entre líneas para mejor legibilidad */
+}
